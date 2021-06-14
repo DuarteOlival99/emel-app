@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:background="@color/colorPrimary">
+
+
+    <Button
+        android:id="@+id/appCompatTextView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textColor="#FFFFFF"
+        android:lineHeight="16dp"
+        android:textSize="16sp"
+        android:text="@string/park_me_now"
+        android:visibility="visible"
+        android:layout_marginEnd="8dp"
+        app:elevation="6dp"
+        android:scaleType="center"
+        android:backgroundTint="#54B3C5"
+        app:fabSize="normal"
+        app:rippleColor="#3cffffff"
+        app:srcCompat="@drawable/ic_local_parking"
+        app:tint="#FFFFFF"
+        />
+
+
+</LinearLayout>

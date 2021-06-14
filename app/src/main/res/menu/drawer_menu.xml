@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <group>
+        <item
+            android:id="@+id/nav_list"
+            android:icon="@drawable/ic_list"
+            android:title="@string/List"
+            />
+        <item
+            android:id="@+id/nav_meus_veiculos"
+            android:icon="@drawable/ic_directions_car"
+            android:title="@string/veiculos"
+            />
+        <item
+            android:id="@+id/nav_map"
+            android:icon="@drawable/ic_map"
+            android:title="@string/map"
+            />
+        <item
+            android:id="@+id/nav_map_bike"
+            android:icon="@drawable/ic_directions_bike"
+            android:title="@string/map_bike"
+            />
+        <item
+            android:id="@+id/nav_meus_lugares"
+            android:icon="@drawable/ic_place"
+            android:title="@string/meus_lugares"
+            />
+
+
+
+    </group>
+
+            <item
+                android:id="@+id/nav_contactos"
+                android:icon="@drawable/ic_contacts"
+                android:title="@string/contactos">
+
+                <menu>
+                    <item
+                        android:id="@+id/postos_atendimento"
+                        android:title="@string/postos_atendimento"
+                        android:icon="@drawable/ic_local_post_office"
+                        />
+
+                    <item
+                        android:id="@+id/contactos_gerais"
+                        android:title="@string/contactos_gerais"
+                        android:icon="@drawable/ic_contacts"
+                        />
+
+                    <item
+                        android:id="@+id/bloqueio_veiculos"
+                        android:title="@string/relativamente_ao_bloqueio_de_ve_culos"
+                        android:icon="@drawable/ic_lock"
+                        />
+                </menu>
+
+            </item>
+    <item
+        android:id="@+id/nav_definicoes"
+        android:icon="@drawable/ic_contacts"
+        android:title="@string/definicoes">
+
+        <menu>
+            <item
+                android:id="@+id/definicoes"
+                android:title="@string/definicoes"
+                android:icon="@drawable/ic_settings_white"
+                />
+        </menu>
+
+    </item>
+        </menu>

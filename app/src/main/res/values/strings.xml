@@ -1,0 +1,145 @@
+<resources>
+    <string name="app_name" translatable="false">Get Me a Spot</string>
+
+
+    <!-- Drawer -->
+    <string name="other">Outros</string>
+    <string name="sign_out">Sair</string>
+    <string name="drawer_open" translatable="false">Open</string>
+    <string name="drawer_close" translatable="false">Close</string>
+    <string name="List">Parques</string>
+    <string name="map">Mapa</string>
+    <string name="veiculos">Meus Veiculos</string>
+    <string name="contactos">Contactos Gerais</string>
+
+    <string name="marca">Marca:</string>
+    <string name="matricula">Matricula:</string>
+    <string name="data_matricula">Data da matricula:</string>
+    <string name="modelo">Modelo:</string>
+
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="fab" translatable="false">fab</string>
+    <string name="NovoVeiculo">Novo Veiculo</string>
+    <string name="EditarVeiculo">Editar Veiculo</string>
+
+    <string name="loja_saldanha">Loja do Cidadão do Saldanha</string>
+    <string name="mercado_31" translatable="false"><u>Mercado 31 de Janeiro, Rua Engenheiro Vieira da Silva</u></string>
+    <string name="horario_1">Horário: Segunda a Sexta - 9:00 às 19:00</string>
+    <string name="loja_laranjeiras">Loja do Cidadão das Laranjeiras</string>
+    <string name="rua_abranches" translatable="false"><u>Rua Abranches Ferrão, 10</u></string>
+    <string name="horario_2">Horário: Segunda a Sexta - 8:30 às 19:30</string>
+    <string name="edificio_central">Edifício central do Município de Lisboa (Encerrado temporariamente: COVID-19)</string>
+    <string name="campo_grande_25" translatable="false"><u>Campo Grande, 25</u></string>
+    <string name="horario_3">Horário: Segunda a Sexta - 9:00 às 19:00</string>
+    <string name="horario_2_1">Sábados: das 09:30 às 15:00</string>
+    <string name="form_marca">Marca</string>
+    <string name="form_modelo">Modelo</string>
+    <string name="form_data_da_matricula">Data da Matricula</string>
+    <string name="form_matricula">Matricula</string>
+    <string name="novo_veiculo">Novo Veiculo</string>
+    <string name="confirmar">CONFIRMAR</string>
+    <string name="cancel" translatable="false">CANCEL</string>
+    <string name="bem_vindo">BEM VINDO</string>
+    <string name="get_me_a_spot" translatable="false">GET ME A SPOT</string>
+    <string name="parques">Parques</string>
+    <string name="meus_veiculos">Meus Veiculos</string>
+    <string name="livre">Livre</string>
+    <string name="lotado">Lotado</string>
+    <string name="potencialmente_lotado">Potencialmente lotado</string>
+    <string name="livres">Livres: </string>
+    <string name="maneira_mais_facil_de_estacionar">A Maneira Mais Facil de Estacionar</string>
+    <string name="relativamente_ao_bloqueio_de_ve_culos">Bloqueio de veículos</string>
+    <string name="contactos_gerais">Contactos gerais</string>
+    <string name="postos_atendimento">Postos atendimento</string>
+    <string name="postos_de_atendimento">Postos de Atendimento</string>
+    <string name="telefone">Telefone</string>
+    <string name="fax" translatable="false">Fax</string>
+    <string name="horario">Horário</string>
+    <string name="horario_geral">Segunda a Sexta das 8:00 às 20:00</string>
+    <string name="area_reservada_text">Para nos contactar, utilize a área reservada dos clientes EMEL através de Área reservada do Site EMEL.</string>
+    <string name="bloqueio_de_veiculos">Bloqueio de Veiculos</string>
+    <string name="horario_bloqueio">2ª a 6ª Feira - 8:00 às 24:00 / Sábados, Domingos e Feriados - 9:00 às 18:00</string>
+    <string name="tipo">Tipo</string>
+    <string name="definicoes">Definições</string>
+    <string name="ativar_modo_noturno">Ativar Modo Noturno</string>
+    <string name="ativar_localizaco">Ativar Localização</string>
+    <string name="livre_popup">Livre</string>
+    <string name="potencialmente_lotado_popup">Potencialmente lotado</string>
+    <string name="lotado_popup">lotado</string>
+    <string name="superfice_popup">Superfice</string>
+    <string name="estrutura_popup">Estrutura</string>
+    <string name="aberto">Aberto</string>
+    <string name="fechado">Fechado</string>
+    <string name="todas_popup">Todas</string>
+    <string name="lotacao_filtros">Lotação</string>
+    <string name="distancia_filtros">Distância</string>
+    <string name="todos_tipos_parques">Todos</string>
+    <string name="distancia_ascendente">Distância ascendente</string>
+    <string name="distancia_descendente">Distância descendente</string>
+    <string name="alcance">Alcance</string>
+    <string name="undo">DESFAZER</string>
+    <string name="meus_lugares">Meus lugares</string>
+    <string name="remover">Remover</string>
+    <string name="adicionar">Adicionar</string>
+    <string name="alugar_uma_bicicleta">Alugar uma Bicicleta</string>
+    <string name="map_bike">Mapa bicicletas</string>
+    <string name="sim">SIM</string>
+    <string name="nao">Não</string>
+    <string name="popup_bicicleta_message">Pretende alugar uma bicicleta?</string>
+    <string name="park_me_now" translatable="false">Park me now</string>
+    <string name="nome_default">NOME</string>
+
+    <string name="estado_parque">Estado:</string>
+
+    <string name="marca_meusVeiculos">Marca:</string>
+    <string name="matricula_meusVeiculos">Matricula:</string>
+    <string name="modelo_meusVeiculos">Modelo:</string>
+    <string name="data_matricula_meusVeiculos">Data Matricula:</string>
+
+    <string name="localizacao_parque">Localização:</string>
+    <string name="distancia_parque">Distância:</string>
+    <string name="tipo_de_parque_parque">Tipo de parque:</string>
+    <string name="lotacao_do_parque_parque">Lotação do parque:</string>
+    <string name="ultima_atualizacao_parque">Ultima atualização:</string>
+    <string name="tempo_my_spot">Tempo:</string>
+    <string name="valor_parque">Valor:</string>
+    <string name="lugares_livres_parque">Lugares livres:</string>
+    <string name="descricao_parque">Descrição:</string>
+    <string name="go_to_map">Vai Para o Mapa</string>
+    <string name="btn_add_contact_geral" translatable="false"><u>211163060</u></string>
+    <string name="btn_add_contact_block" translatable="false"><u>217803131</u></string>
+    <string name="verificar_bloqueio"><u>Verificar se está bloqueado</u></string>
+    <string name="verificar"><u>Verificar</u></string>
+    <string name="filtros">Filtros</string>
+    <string name="filtrar">Filtrar</string>
+    <string name="ate">Até </string>
+    <string name="limpar_filtros">Os seus filtros foram limpos</string>
+    <string name="abane_para_restaurar_os_filtros">Abane para restaurar os filtros</string>
+    <string name="bicicletas_discponiveis">Nr. Bicicletas disponiveis:</string>
+    <string name="bicicletas_total">Nr. total de Bicicletas:</string>
+    <string name="park_lugares_ocupados">Nr. lugares ocupados:</string>
+    <string name="park_lugares_existentes">Nr. lugares existentes:</string>
+    <string name="ultima_atualizacao">Ultima atualização:</string>
+    <string name="popup_parques_message">Não foi possivel obter a localização</string>
+    <string name="ok" translatable="false">Ok</string>
+    <string name="ativar_mode_noturno_automatico">Ativar Mode Noturno Automatico</string>
+    <string name="ativar_limpar_filtros_com_shake">Ativar limpar filtros com Shake</string>
+    <string name="sem_conexao">Sem conexão a internet, dados desatualizados</string>
+    <string name="sem_permissao">Acesso negado à camera</string>
+    <string name="com_permissao">Acesso garantido à camera</string>
+    <string name="sem_foto">Ainda não tirou uma foto ao lugar</string>
+    <string name="sem_localizacao">Localização não encontrada</string>
+
+    <string-array name="tipo_parque">
+        <item>@string/todos_tipos_parques</item>
+        <item>@string/superfice_popup</item>
+        <item>@string/estrutura_popup</item>
+    </string-array>
+
+    <string-array name="estado_parque">
+        <item>@string/todos_tipos_parques</item>
+        <item>@string/livre</item>
+        <item>@string/potencialmente_lotado</item>
+    </string-array>
+
+</resources>

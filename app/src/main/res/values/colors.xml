@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2196F3</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="veiculosTitulos">#3F51B5</color>
+    <color name="colorPrimaryFade">#802196F3</color>
+
+    <!-- veiculo -->
+    <color name="colorVeiculoPrimary">#018C89</color>
+    <color name="colorVeiculoPrimaryDark">#0A5D5B</color>
+    <color name="colorVeiculoTextBoxBack">#0A5D5B</color>
+    <color name="colorVeiculoAccent">#000000</color>
+    <color name="colorVeiculoHint">#c3acacac</color>
+    <color name="colorVeiculoButton">#FFFFFF</color>
+    <color name="colorVeiculoInput">#424242</color>
+
+    <!-- form Veiculos -->
+    <color name="veiculosTitulo">#FFFFFF</color>
+
+    <color name="selectedButton">#BBDCF6</color>
+    <color name="unSelectedButton">#802196F3</color>
+
+    <color name="white">#ffffff</color>
+    <color name="dark">#000000</color>
+
+    //Light Mode
+    <color name="backgroundLight">#FFFFFF</color>
+    <color name="textTitleLight">#000000</color>
+    <color name="textLight">#3F51B5</color>
+    <color name="cardViewLight">#C9FFFFFF</color>
+    <color name="filtrosLight">#FFFFFF</color>
+    <color name="drawerLight">#FFFFFF</color>
+
+    //Dark Mode
+    <color name="backgroundDark">#595858</color>
+    <color name="textTitleDark">#ffffff</color>
+    <color name="cardViewDark">#C9FFFFFF</color>
+    <color name="textDark">#FF4D8DBA</color>
+    <color name="filtrosDark">#9CD5D5D5</color>
+    <color name="drawerDark">#D5D5D5</color>
+
+
+
+</resources>

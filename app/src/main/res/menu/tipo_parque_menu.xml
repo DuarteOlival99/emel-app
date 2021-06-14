@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group>
+
+        <item
+            android:id="@+id/todos_tipos"
+            android:icon="@drawable/ic_local_parking"
+            android:title="@string/todos_tipos_parques"
+            />
+
+        <item
+            android:id="@+id/superfice_popup"
+            android:icon="@drawable/ic_superficie"
+            android:title="@string/superfice_popup"
+            />
+
+        <item
+            android:id="@+id/estrutura_popup"
+            android:icon="@drawable/ic_estrutura"
+            android:title="@string/estrutura_popup"
+            />
+
+    </group>
+
+</menu>

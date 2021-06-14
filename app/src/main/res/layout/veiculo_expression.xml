@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/cardView"
+    android:onClick="onClickTeste"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    style="@style/CardView.Light"
+    android:layout_margin="8dp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    android:backgroundTint="@color/cardViewLight"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/o"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:src="@drawable/ic_baseline_swipe_horiz_24"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/veiculo_uuid_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            />
+
+
+        <TextView
+            android:id="@+id/nome_veiculo"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:paddingBottom="16dp"
+            android:text="@string/nome_default"
+            android:textColor="@color/textTitleLight"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/veiculo_marca"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_car"
+            android:layout_marginLeft="20dp"
+            android:drawablePadding="5dp"
+            android:text="@string/marca_meusVeiculos"
+            android:gravity="start"
+            android:textColor="@color/textTitleLight"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/veiculo_marca_text"
+            app:layout_constraintTop_toBottomOf="@id/nome_veiculo" />
+
+        <TextView
+            android:id="@+id/veiculo_marca_text"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:gravity="start"
+            android:textColor="@color/textLight"
+            app:layout_constraintStart_toEndOf="@id/veiculo_marca"
+            app:layout_constraintTop_toTopOf="@id/veiculo_marca"
+            />
+
+
+        <TextView
+            android:id="@+id/veiculo_matricula"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:text="@string/matricula_meusVeiculos"
+            android:drawableStart="@drawable/ic_matricula"
+            android:drawablePadding="5dp"
+            android:textColor="@color/textTitleLight"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/veiculo_matricula_text"
+            app:layout_constraintTop_toBottomOf="@id/veiculo_marca"  />
+
+        <TextView
+            android:id="@+id/veiculo_matricula_text"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:gravity="start"
+            android:textColor="@color/textLight"
+            app:layout_constraintStart_toEndOf="@id/veiculo_matricula"
+            app:layout_constraintTop_toTopOf="@id/veiculo_matricula"
+            />
+
+
+
+        <Button
+            android:id="@+id/arrowBtn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="12dp"
+            android:background="@drawable/ic_keyboard_arrow_down"
+            android:onClick="onClickTeste"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/expandableView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="@id/arrowBtn"
+            app:layout_constraintStart_toStartOf="@id/veiculo_matricula"
+            app:layout_constraintTop_toBottomOf="@+id/veiculo_matricula">
+
+
+            <TextView
+                android:id="@+id/veiculo_modelo"
+                style="@style/TextAppearance.AppCompat.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:drawableStart="@drawable/ic_modelo"
+                android:drawablePadding="5dp"
+                android:gravity="start"
+                android:text="@string/modelo_meusVeiculos"
+                android:textColor="@color/textTitleLight"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/expandableView" />
+
+            <TextView
+                android:id="@+id/veiculo_modelo_text"
+                style="@style/TextAppearance.AppCompat.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:layout_marginLeft="3dp"
+                android:textColor="@color/textLight"
+                app:layout_constraintStart_toEndOf="@id/veiculo_modelo"
+                app:layout_constraintTop_toTopOf="@id/veiculo_modelo"
+                />
+
+            <TextView
+                android:id="@+id/veiculo_data_matricula"
+                style="@style/TextAppearance.AppCompat.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/data_matricula_meusVeiculos"
+                android:layout_marginLeft="20dp"
+                android:gravity="center"
+                android:drawableStart="@drawable/ic_data_matricula"
+                android:drawablePadding="5dp"
+                android:textColor="@color/textTitleLight"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/veiculo_modelo" />
+
+            <TextView
+                android:id="@+id/veiculo_data_matricula_text"
+                style="@style/TextAppearance.AppCompat.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:layout_marginLeft="3dp"
+                android:textColor="@color/textLight"
+                app:layout_constraintStart_toEndOf="@id/veiculo_data_matricula"
+                app:layout_constraintTop_toTopOf="@id/veiculo_data_matricula"
+                />
+
+
+            <TextView
+                android:id="@+id/veiculo_bloqueado"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_lock"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:text="@string/verificar_bloqueio"
+                android:textColor="#4D8DBA"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/veiculo_data_matricula" />
+
+
+            <Button
+                android:id="@+id/edit"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="12dp"
+                android:background="@drawable/ic_edit"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/veiculo_bloqueado" />
+
+
+            <Button
+                android:id="@+id/delete"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="12dp"
+                android:background="@drawable/ic_delete"
+                app:layout_constraintEnd_toStartOf="@+id/edit"
+                app:layout_constraintTop_toBottomOf="@+id/veiculo_bloqueado" />
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

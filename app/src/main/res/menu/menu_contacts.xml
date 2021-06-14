@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group>
+
+        <item
+            android:id="@+id/postos_atendimento"
+            android:title="@string/postos_atendimento"
+            />
+
+        <item
+            android:id="@+id/contactos_gerais"
+            android:title="@string/contactos_gerais"
+            />
+
+        <item
+            android:id="@+id/bloqueio_veiculos"
+            android:title="@string/relativamente_ao_bloqueio_de_ve_culos"
+            />
+
+    </group>
+
+</menu>

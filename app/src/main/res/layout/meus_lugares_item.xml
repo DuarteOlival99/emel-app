@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:id="@+id/cardViewMeusLugares"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    style="@style/CardView.Light"
+    android:layout_margin="8dp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    android:backgroundTint="@color/cardViewLight"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/o"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp">
+
+        <TextView
+            android:id="@+id/nome_veiculo_my_spot"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:paddingBottom="16dp"
+            android:text="NOME"
+            android:textColor="@color/textTitleLight"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/veiculo_marca_my_spot"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_car"
+            android:layout_marginStart="20dp"
+            android:drawablePadding="5dp"
+            android:text="@string/marca_meusVeiculos"
+            android:gravity="start"
+            android:textColor="@color/textTitleLight"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/veiculo_marca_my_spot_text"
+            app:layout_constraintTop_toBottomOf="@id/nome_veiculo_my_spot" />
+
+        <TextView
+            android:id="@+id/veiculo_marca_my_spot_text"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:gravity="start"
+            android:textColor="@color/textLight"
+            app:layout_constraintStart_toEndOf="@id/veiculo_marca_my_spot"
+            app:layout_constraintTop_toTopOf="@id/veiculo_marca_my_spot"
+            />
+
+        <TextView
+            android:id="@+id/veiculo_matricula_my_spot"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/matricula_meusVeiculos"
+            android:drawableStart="@drawable/ic_matricula"
+            android:drawablePadding="5dp"
+            android:textColor="@color/textTitleLight"
+            app:layout_constraintStart_toStartOf="@id/veiculo_marca_my_spot"
+            app:layout_constraintTop_toBottomOf="@id/veiculo_marca_my_spot" />
+
+        <TextView
+            android:id="@+id/veiculo_matricula_my_spot_text"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:gravity="start"
+            android:textColor="@color/textLight"
+            app:layout_constraintStart_toEndOf="@id/veiculo_matricula_my_spot"
+            app:layout_constraintTop_toTopOf="@id/veiculo_matricula_my_spot"
+            />
+
+
+        <TextView
+            android:id="@+id/distanc_parque_my_spot"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_my_location"
+            android:drawablePadding="5dp"
+            android:text="@string/distancia_parque"
+            android:textColor="@color/textTitleLight"
+            app:layout_constraintStart_toStartOf="@id/veiculo_matricula_my_spot"
+            app:layout_constraintTop_toBottomOf="@id/veiculo_matricula_my_spot"
+            />
+
+        <TextView
+            android:id="@+id/distanc_parque_my_spot_text"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:gravity="start"
+            android:textColor="@color/textLight"
+            app:layout_constraintStart_toEndOf="@id/distanc_parque_my_spot"
+            app:layout_constraintTop_toTopOf="@id/distanc_parque_my_spot"
+            />
+
+        <TextView
+            android:id="@+id/time_my_spot"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_timer_black"
+            android:drawablePadding="5dp"
+            android:text="@string/tempo_my_spot"
+            android:textColor="@color/textTitleLight"
+            app:layout_constraintTop_toBottomOf="@id/distanc_parque_my_spot"
+            app:layout_constraintStart_toStartOf="@id/distanc_parque_my_spot"
+            />
+
+        <TextView
+            android:id="@+id/time_my_spot_text"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:gravity="start"
+            android:textColor="@color/textLight"
+            app:layout_constraintStart_toEndOf="@id/time_my_spot"
+            app:layout_constraintTop_toTopOf="@id/time_my_spot"
+            />
+
+        <Button
+            android:id="@+id/lugar_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawableStart="@drawable/ic_delete_white"
+            android:text="@string/remover"
+            android:textColor="@color/white"
+            android:background="@color/colorPrimary"
+            android:padding="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/time_my_spot" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

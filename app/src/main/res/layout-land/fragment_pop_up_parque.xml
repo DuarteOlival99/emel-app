@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundLight">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/constraintLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:elevation="5dp"
+        android:background="@color/cardViewLight">
+
+        <TextView
+            android:id="@+id/nome_parque_popup_filtros"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="@string/nome_default"
+            android:textColor="@color/textTitleLight"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/localizacao_parque_pop"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_location_on"
+            android:drawablePadding="5dp"
+            android:text="@string/localizacao_parque"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/textTitleLight"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lugares_parque_pop"
+            />
+
+        <TextView
+            android:id="@+id/localizacao_parque_text_pop"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:gravity="start"
+            android:textColor="@color/textLight"
+            app:layout_constraintStart_toEndOf="@id/localizacao_parque_pop"
+            app:layout_constraintTop_toTopOf="@id/localizacao_parque_pop"
+            />
+
+        <TextView
+            android:id="@+id/distanc_parque_pop"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_my_location"
+            android:drawablePadding="5dp"
+            android:layout_marginStart="10dp"
+            android:text="@string/distancia_parque"
+            android:textColor="@color/textTitleLight"
+            app:layout_constraintStart_toEndOf="@id/abertura_parque_text_pop"
+            app:layout_constraintTop_toTopOf="@id/abertura_parque_pop"
+            />
+
+        <TextView
+            android:id="@+id/distanc_parque_text_pop"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:gravity="start"
+            android:textColor="@color/textLight"
+            app:layout_constraintStart_toEndOf="@id/distanc_parque_pop"
+            app:layout_constraintTop_toTopOf="@id/distanc_parque_pop"
+            />
+
+        <TextView
+            android:id="@+id/distanc_parque_text_km"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Km"
+            android:layout_marginLeft="3dp"
+            android:gravity="start"
+            android:textColor="@color/textLight"
+            app:layout_constraintStart_toEndOf="@id/distanc_parque_text_pop"
+            app:layout_constraintTop_toTopOf="@id/distanc_parque_text_pop"
+            />
+
+        <TextView
+            android:id="@+id/tipo_parque_pop"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_local_parking"
+            android:drawablePadding="5dp"
+            android:textColor="@color/textTitleLight"
+            android:text="@string/tipo_de_parque_parque"
+            android:layout_marginStart="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/localizacao_parque_pop"/>
+
+        <TextView
+            android:id="@+id/tipo_parque_text_pop"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:gravity="start"
+            android:textColor="@color/textLight"
+            app:layout_constraintStart_toEndOf="@id/tipo_parque_pop"
+            app:layout_constraintTop_toTopOf="@id/tipo_parque_pop"
+            />
+
+        <TextView
+            android:id="@+id/abertura_parque_pop"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_open"
+            android:drawablePadding="5dp"
+            android:text="@string/estado_parque"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/textTitleLight"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nome_parque_popup_filtros"
+            />
+
+        <TextView
+            android:id="@+id/abertura_parque_text_pop"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:gravity="start"
+            android:textColor="@color/textLight"
+            app:layout_constraintStart_toEndOf="@id/abertura_parque_pop"
+            app:layout_constraintTop_toTopOf="@id/abertura_parque_pop"
+            />
+
+        <TextView
+            android:id="@+id/lugares_parque_pop"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_car"
+            android:drawablePadding="5dp"
+            android:text="@string/lugares_livres_parque"
+            android:textColor="@color/textTitleLight"
+            android:layout_marginStart="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintStart_toEndOf="@id/abertura_parque_text_pop"
+            app:layout_constraintTop_toBottomOf="@+id/abertura_parque_pop"
+            />
+
+        <TextView
+            android:id="@+id/lugares_parque_text_pop"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:gravity="start"
+            android:textColor="@color/textLight"
+            app:layout_constraintStart_toEndOf="@id/lugares_parque_pop"
+            app:layout_constraintTop_toTopOf="@id/lugares_parque_pop"
+            />
+
+        <LinearLayout
+            android:id="@+id/layout_estado_parque_pop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintTop_toTopOf="@id/lugares_parque_pop"
+            android:layout_marginEnd="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            >
+
+            <TextView
+                android:id="@+id/estado_parque_pop"
+                style="@style/TextAppearance.AppCompat.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_camera_black"
+                android:drawablePadding="5dp"
+                android:textColor="@color/textTitleLight"
+                android:text="@string/lotacao_do_parque_parque"
+                android:textSize="15sp"
+                android:textStyle="italic"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:id="@+id/estado_parque_text_pop"
+                style="@style/TextAppearance.AppCompat.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="3dp"
+                android:gravity="start"
+                android:textColor="@color/textLight"
+                android:textSize="15sp"
+                android:textStyle="italic"
+                app:layout_constraintStart_toEndOf="@id/estado_parque_pop"
+                app:layout_constraintTop_toTopOf="@id/estado_parque_pop"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_atualizacao_parque_pop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/layout_estado_parque_pop"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="10dp"
+            >
+
+            <TextView
+                android:id="@+id/atualizacao_parque_pop"
+                style="@style/TextAppearance.AppCompat.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="@string/ultima_atualizacao_parque"
+                android:textColor="@color/textTitleLight"
+                android:textSize="15sp"
+                android:textStyle="italic"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/layout_estado_parque_pop"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <TextView
+                android:id="@+id/atualizacao_parque_text_pop"
+                style="@style/TextAppearance.AppCompat.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="3dp"
+                android:gravity="start"
+                android:textColor="@color/textLight"
+                android:textSize="15sp"
+                android:textStyle="italic"
+                app:layout_constraintStart_toEndOf="@id/atualizacao_parque_pop"
+                app:layout_constraintTop_toTopOf="@id/atualizacao_parque_pop"
+                />
+
+        </LinearLayout>
+
+
+        <com.google.android.gms.maps.MapView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/popup_map"
+            android:layout_marginTop="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tipo_parque_pop"
+            />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

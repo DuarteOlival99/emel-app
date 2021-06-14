@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:id="@+id/teste"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    style="@android:style/Theme.Holo.Light.NoActionBar"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/backgroundLight">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayoutVeiculo"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:scrollbars="horizontal|vertical"
+        tools:context="pt.ulusofona.ecati.deisi.licenciatura.cm1920.grupo2.ui.activities.PopUpWindowActivity">
+
+        <TextView
+            android:id="@+id/popup_titulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/NovoVeiculo"
+            android:textSize="30sp"
+            android:textColor="@color/textTitleLight"
+            android:textStyle="bold"
+            android:gravity="center"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/campo_marca"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:hint="@string/form_marca"
+            android:textColor="@color/colorVeiculoInput"
+            app:hintTextColor="@color/colorVeiculoInput"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/popup_titulo"
+            >
+
+            <EditText
+                android:id="@+id/campo_marca_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/textbox_back"
+                android:padding="10dp"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:textColorHint="@color/colorVeiculoInput"
+                android:textColor="@color/colorVeiculoInput"
+                android:textSize="22sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/campo_modelo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:hint="@string/form_modelo"
+            android:textColor="@color/colorVeiculoInput"
+            app:hintTextColor="@color/colorVeiculoInput"
+            app:layout_constraintEnd_toEndOf="@id/campo_marca"
+            app:layout_constraintStart_toStartOf="@id/campo_marca"
+            app:layout_constraintTop_toBottomOf="@id/campo_marca">
+
+            <EditText
+                android:id="@+id/campo_modelo_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/textbox_back"
+                android:padding="10dp"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:textColorHint="@color/colorVeiculoInput"
+                android:textColor="@color/colorVeiculoInput"
+                android:textSize="22sp"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/campo_data_matricula"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/form_data_da_matricula"
+            app:hintEnabled="true"
+            android:padding="5dp"
+            android:textColor="@color/colorVeiculoInput"
+            app:hintTextColor="@color/colorVeiculoInput"
+            app:layout_constraintTop_toBottomOf="@id/campo_modelo"
+            app:layout_constraintStart_toStartOf="@id/campo_modelo"
+            app:layout_constraintEnd_toEndOf="@id/campo_modelo">
+
+            <EditText
+                android:id="@+id/campo_data_matricula_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/textbox_back"
+                android:padding="10dp"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:textColorHint="@color/colorVeiculoInput"
+                android:textColor="@color/colorVeiculoInput"
+                android:textSize="22sp"
+                android:inputType="none"
+                android:focusable="false"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/campo_matricula"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/form_matricula"
+            android:padding="10dp"
+            android:textColor="@color/colorVeiculoInput"
+            app:hintTextColor="@color/colorVeiculoInput"
+            app:layout_constraintTop_toBottomOf="@id/campo_data_matricula"
+            app:layout_constraintStart_toStartOf="@id/campo_data_matricula"
+            app:layout_constraintEnd_toEndOf="@id/campo_data_matricula">
+
+            <EditText
+                android:id="@+id/campo_matricula_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/textbox_back"
+                android:padding="10dp"
+                android:textColorHint="@color/colorVeiculoInput"
+                android:textColor="@color/colorVeiculoInput"
+                android:textSize="22sp"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                app:layout_constraintTop_toBottomOf="@id/campo_data_matricula"
+                app:layout_constraintStart_toStartOf="@id/campo_data_matricula"
+                app:layout_constraintEnd_toEndOf="@id/campo_data_matricula"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/button_cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#CCFF0000"
+            android:onClick="onClickCancel"
+            android:padding="5dp"
+            android:gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:text="@string/cancel"
+            android:textColor="#FFFFFF"
+            android:autoSizeMinTextSize="20dp"
+            android:autoSizeMaxTextSize="50dp"
+            android:autoSizeStepGranularity="2dp"
+            app:layout_constraintStart_toStartOf="@+id/campo_matricula"
+            app:layout_constraintTop_toBottomOf="@+id/campo_matricula"
+            app:layout_constraintEnd_toStartOf="@id/button_confirmar"
+            />
+
+        <Button
+            android:id="@+id/button_confirmar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#BF00D146"
+            android:onClick="onClickConfirmar"
+            android:padding="5dp"
+            android:gravity="center"
+            android:text="@string/confirmar"
+            android:textColor="#FFFFFF"
+            android:layout_marginEnd="15dp"
+            android:autoSizeMinTextSize="20dp"
+            android:autoSizeMaxTextSize="50dp"
+            android:autoSizeStepGranularity="2dp"
+            app:layout_constraintEnd_toEndOf="@+id/campo_matricula"
+            app:layout_constraintStart_toEndOf="@+id/button_cancel"
+            app:layout_constraintTop_toTopOf="@+id/button_cancel" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
